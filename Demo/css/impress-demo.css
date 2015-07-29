@@ -1,0 +1,103 @@
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+body{
+    background-image: url("space.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+p{
+    text-align: center;
+}
+.impress-supported .fallback-message {
+    display: none;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.025;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1; }
+
+.step{
+    position: relative;
+    width: 500px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+
+}
+#overview { display: none }
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+#big{
+    width: 700px;
+}
+#slide1{
+    height: 500px;
+}
+#slide2{
+    height: 502px;
+}
+#slide3{
+    height: 504px;
+}
+#galaxy{
+    width: 700px;
+    padding-bottom: 250px;
+    background-image: url("galaxy.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#earth{
+    width: 500px;
+    padding-bottom: 250px;
+    background-image: url("earth.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#life.present .scale{
+    -webkit-transform: scale(2);
+    -moz-transform:    scale(2);
+    -ms-transform:     scale(2);
+    -o-transform:      scale(2);
+    transform:         scale(2);
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+}
