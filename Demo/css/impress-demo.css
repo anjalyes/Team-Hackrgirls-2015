@@ -111,3 +111,14 @@ p{
 .navigation{
     z-index: 10000;
 }
+
+.big-text{
+    font-size: 100px;
+}
+
+.50px{
+    font-size: 50px;
+}
+.left{
+    text-align: left;
+}
