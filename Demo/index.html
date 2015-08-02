@@ -10,15 +10,14 @@
 
 <body class="impress-not-supported">
 
+	
+
 	<div class="fallback-message">
 	    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
 	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 	</div>
 
-	<div class="navigation">
-		<a href="javascript:void(0);" class="prev">Previous</a>
-		<a href="javascript:void(0);" class="next">Next</a>
-	</div>
+	
 	<div id="impress">
 		<div class="step" data-x="0" data-y="0" data-scale="3">
 			<p style="font-size:50px">Have you ever wondered</p>
@@ -81,17 +80,24 @@
 		</div>
 			
 		</div>
-		<script type="text/javascript">
-		$("body").on("click", "prev", function(){
-			api.prev();
-		});
-		$("body").on("click", "next", function(){
-			api.next();
-		});
-	</script>
 	</div>
-	
+	<div class="navigation">
+		<a href="#" class="prev">Previous</a><br>
+		<a href="#" class="next">Next</a>
+	</div>
 
 	<script src="js/impress.js"></script>
-	<script>impress().init();</script>
+	<script>
+		var api=impress();
+		api.init();
+		document.querySelector(".next").addEventListener('click', function(event) {
+    		api.next();
+    		event.preventDefault(); 
+		});
+		document.querySelector(".prev").addEventListener('click', function(event) {
+    		api.prev();
+    		event.preventDefault(); 
+		});
+
+	</script>
 </body>
