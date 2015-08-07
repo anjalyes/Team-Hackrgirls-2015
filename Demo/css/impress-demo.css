@@ -122,3 +122,17 @@ p{
 .left{
     text-align: left;
 }
+.next img{
+    width: 1.5%;
+    margin-top: 280px;
+    float: right;
+    position: absolute;
+    margin-left: 1291px;
+    
+}
+.prev img{
+    width: 1.5%;
+    margin-top: 280px;
+    float: right;
+    position: absolute;    
+}
