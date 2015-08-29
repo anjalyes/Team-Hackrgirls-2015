@@ -95,3 +95,9 @@ p{
     border-top: 4px solid black;
 }
 
+.z{
+    display: block;
+    height: 10px;
+    width: 400px;
+    border-top: 2px solid black;
+}
