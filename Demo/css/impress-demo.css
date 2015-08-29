@@ -122,17 +122,25 @@ p{
 .left{
     text-align: left;
 }
-.next img{
-    width: 1.5%;
-    margin-top: 280px;
-    float: right;
+
+.next{
+    background-image: url("next.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 35%;
+    display: inline-block;
+    width: 6.5%;
     position: absolute;
-    margin-left: 1291px;
-    
+    right: 0.5%;
+    height: 100%;    
 }
-.prev img{
-    width: 1.5%;
-    margin-top: 280px;
-    float: right;
-    position: absolute;    
+.prev{
+    
+    background-image: url("prev.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 35%;
+    display: inline-block;
+    width: 6.5%;  
+    height: 100%;
 }
