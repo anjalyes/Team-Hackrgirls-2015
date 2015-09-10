@@ -123,24 +123,23 @@ p{
     text-align: left;
 }
 
-.next{
-    background-image: url("next.png");
+.arrow{
     background-repeat: no-repeat;
-    background-position: right center;
     background-size: 35%;
     display: inline-block;
     width: 6.5%;
+    height: 100%;
+}
+
+.next{
+    background-image: url("next.png");
+    background-position: right center;   
     position: absolute;
-    right: 0.5%;
-    height: 100%;    
+    right: 0;
 }
 .prev{
     
     background-image: url("prev.png");
-    background-repeat: no-repeat;
     background-position: left center;
-    background-size: 35%;
-    display: inline-block;
-    width: 6.5%;  
-    height: 100%;
+    left: 0;
 }
