@@ -126,20 +126,18 @@ p{
 .arrow{
     background-repeat: no-repeat;
     background-size: 35%;
-    display: inline-block;
+    position: absolute;
+    background-position: center center;
     width: 6.5%;
     height: 100%;
 }
 
 .next{
     background-image: url("next.png");
-    background-position: right center;   
-    position: absolute;
     right: 0;
 }
 .prev{
     
     background-image: url("prev.png");
-    background-position: left center;
     left: 0;
 }
