@@ -1,36 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Coordinates</title>
- 
-    <link href="css/style.css" rel="stylesheet" />
+    <meta charset = "utf-8">
+    <title>Cube using Impress.js</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="impress-not-supported">
 
-	
+    <div class="fallback-message">
+            <!-- Message here -->
+    </div>
 
-	<div class="fallback-message">
-	    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-	</div>
+    <div id="impress">
 
-	
-	<div id="impress">
-		<div class="step" data-x="0" data-y="0" >
-			
-		</div>
-		<div class="step" data-x="0" data-y="0" data-rotate="-90">
-			
-		</div>
-	</div>
-	
+    <div id="face-1" class="step" data-z="350">
+        This is face 1
+    </div>
 
-	<script src="js/impress.js"></script>
-	<script>
-		var api=impress();
-		api.init();
-	</script>
+    <div id="face-2" class="step" data-x="350" data-rotate-y="90">
+        This is face 2
+    </div>
+
+    <div id="face-3" class="step"data-z="-350" data-rotate-y="180">
+        This is face 3
+    </div>
+
+    <div id="face-4" class="step" data-x="-350" data-rotate-y="270">
+        This is face 4
+    </div>
+
+    <div id="face-5" class="step" data-y="-350" data-rotate-x="90" data-rotate-y="360">
+        This is face 5
+    </div>
+
+    <div id="face-6" class="step" data-y="350" data-rotate-x="270" data-rotate-y="360">
+        This is face 6
+    </div>
+
+</div>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 </body>
+</html>

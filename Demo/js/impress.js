@@ -723,7 +723,7 @@
         //   as another way to moving to next step... And yes, I know that for the sake of
         //   consistency I should add [shift+tab] as opposite action...
         document.addEventListener("keyup", function ( event ) {
-            if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
+            if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) || (event.keyCode >= 48 && event.keyCode <=57) || (event.keyCode >= 96 && event.keyCode <= 105)) {
                 switch( event.keyCode ) {
                     case 33: // pg up
                     case 37: // left
@@ -737,11 +737,49 @@
                     case 40: // down
                              api.next();
                              break;
+                    case 49: //1
+                    case 97: //1
+                            api.goto(0);
+                            break;
+                    case 50: //2
+                    case 98: //2
+                            api.goto(1);
+                            break;
+                    case 51: //3
+                    case 99: 
+                            api.goto(2);
+                            break;
+                    case 52: //4
+                    case 100: 
+                            api.goto(3);
+                            break;
+                    case 53: //5
+                    case 101:
+                            api.goto(4);
+                            break;
+                    case 54: //6
+                    case 102: 
+                            api.goto(5);
+                            break;
+                    case 55: //7
+                    case 103: 
+                            api.goto(6);
+                            break;
+                    case 56: //8
+                    case 104: 
+                            api.goto(7);
+                            break;
+                    case 57: //9
+                    case 105:
+                            api.goto(8);
+                            break;
+
                 }
                 
                 event.preventDefault();
             }
         }, false);
+        
         
         // delegated handler for clicking on the links to presentation steps
         document.addEventListener("click", function ( event ) {
