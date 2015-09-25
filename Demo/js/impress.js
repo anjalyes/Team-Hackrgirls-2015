@@ -722,7 +722,6 @@
         //   positioning. I didn't want to just prevent this default action, so I used [tab]
         //   as another way to moving to next step... And yes, I know that for the sake of
         //   consistency I should add [shift+tab] as opposite action...
-
         document.addEventListener("keyup", function ( event ) {
             if( event.shiftKey)
                 return;
