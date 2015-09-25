@@ -723,14 +723,9 @@
         //   as another way to moving to next step... And yes, I know that for the sake of
         //   consistency I should add [shift+tab] as opposite action...
         document.addEventListener("keyup", function ( event ) {
-            if( event.shiftKey)
+            if ( event.shiftKey || event.altKey || event.ctrlKey || event.metaKey){
                 return;
-            if ( event.altKey)
-                return;
-            if (event.ctrlKey)
-                return;
-            if (event.metaKey)
-                return;
+            }
             if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) || (event.keyCode >= 48 && event.keyCode <=57) || (event.keyCode >= 96 && event.keyCode <= 105)) {
                 switch( event.keyCode ) {
                     case 33: // pg up
